@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cv Generator</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body{
+            border:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+    input,textarea{
+        margin:20px;
+        border-radius: 3px;
+    }
+    #forms{
+        width: 100%;
+        border:15px blueviolet solid; 
+
+    }
+    textarea{
+        height:80px;
+    }
+    button {
+                margin: 10px;    
+                border:1px black solid;
+    }
+    </style>
+</head>
+<body>
+    <div class="form-group" id="forms">
+    <form action="/" method="POST" >
+   <h4>basic info:</h4>
+    <input type="text" class="form-inline" name="name" id="name" placeholder="name"> 
+    <textarea name="address" id="address" class="form-inline" cols="30" rows="10" placeholder="address"></textarea>
+    <input type="text" name="phoneno" id="phone.no" class="form-inline" placeholder="number">
+    <input type="email" name="email" class="form-inline" placeholder="email">
+    <h4>education qualification:</h4><br>
+    <h5>school</h5>
+    <input type="text" name="school" id="school" class="form-inline" placeholder="school name">
+    <input type="number" name="per1" id="percentage" class="form-inline" placeholder="percentage obtained">
+    <input type="number" name="year1" id="year" class="form-inline" placeholder="year of passing">
+    
+    <h5>pre-university</h5>
+    <input type="text" name="pu" id="pu" class="form-inline" placeholder="pre-university name">
+    <input type="number" name="per2" id="percentage" class="form-inline" placeholder="percentage obtained">
+    <input type="number" name="year2" id="year" class="form-inline" placeholder="year of passing">
+
+    <h5>college</h5>
+    <input type="text" name="college" id="school" class="form-inline" placeholder="college name">
+    <input type="number" name="per3" id="percentage" class="form-inline" placeholder="percentage obtained">
+    <input type="number" name="year3" id="year" class="form-inline" placeholder="year of passing">
+   
+
+    <h4>work experience</h4>
+    <textarea name="wE" id="wE" cols="30" rows="10" class="form-inline" placeholder="enter your work experience"></textarea>
+    
+    <textarea name="skills" id="skills" cols="30" rows="10" class="form-inline" placeholder="enter your skills"></textarea>
+
+    <h4>personal information</h4>
+    <input type="text" name="Fathername" class="form-inline" placeholder="Father Name" >
+    <input type="text" name="Padd" class="form-inline" placeholder="Permanent address">
+
+    <h4>Declaration:</h4>
+    <textarea name="declare" id="declare" class="form-inline" cols="30" rows="10" placeholder="declaration statement"></textarea>
+
+    
+    <button  class="btn btn-primary" type="submit" id="submit">submit</button>
+    </form>
+</div>
+    
+</body>
+</html>
